@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous referrerpolicy="no-referrer/>
+  </head>
+  <body>
+    <div id="container">
+      <div id="div2">
+        <form action="" id="form">
+          <p style="padding-top: 5px; color:orangered; margin-left: 30px;"><b>UI FORM FOR VIEW AND UPDATE</b></p>
+          <hr />
+          <input type="hidden" id="recordId" name="recordId"/><br>
+          <label for="name"><i class="fa-solid fa-id-badge"></i> userid</label><br>
+          <input id="name" type="text"placeholder="enter your user id" name="name" required/><br>
+          <label for="id">id</label><br/>
+          <input type="tel" id="id" name="id" placeholder="enter your id"/><br>
+          <label for="title">title</label><br/>
+          <input type="text" id="title" name="title" placeholder="title"/><br/>
+          <label for="completed">completed</label><br/>
+          <input type="checkbox" type="checkbox" id="checkbox"/><br/>
+          <input type="submit" value="Submit" id="submit"/>
+        </form>
+      </div>
+      <div id="div3">
+        <table id="tab1" class="col" cellpadding="8">
+          <caption style="color: rgb(234, 29, 132)">
+            <b>MY DATA TABLE</b>
+          </caption>
+          <tr id="tr1">
+            <th>User ID</th>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>completed</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </tr>
+          <tbody id="tablebody"></tbody>
+        </table>
+      </div>
+      <div id="hidden"><h1></h1></div>
+      <div id="pagination-container">
+        <button id="prevPage">← Previous</button>
+        <span id="currentPageSpan"></span>
+        <button id="nextPage">Next →</button>
+      </div>
+    </div>
+
+    <script src="./task.js"></script>
+  </body>
+</html>
